@@ -274,16 +274,6 @@
 															</a>
 														</div>
 														
-
-														
-														<div class="product-rating">
-															<div class="star on"></div>
-															<div class="star on"></div>
-															<div class="star on "></div>
-															<div class="star on"></div>
-															<div class="star on"></div>
-														</div>
-														
 														<div class="product-price">
 															<span class="sale-price">$80.00</span>
 															<span class="base-price">$90.00</span>
@@ -292,10 +282,6 @@
 														<div class="product-buttons">
 															<a class="add-to-cart" href="#">
 																<i class="fa fa-trash" aria-hidden="true"></i>
-															</a>
-															
-															<a class="add-wishlist" href="#">
-																<i class="fa fa-heart" aria-hidden="true"></i>												
 															</a>
 															
 															<a class="quickview" href="edit_produk.php">

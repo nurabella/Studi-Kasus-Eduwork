@@ -247,8 +247,8 @@
 							    <label for="exampleInputNama" class="form-label">Harga</label>
 							    <input type="number" name="harga_produk" id="name" class="form-control" required="" autocomplete="off">
 							  </div>
-				                	
 					      </form>
+
 					      <div style="margin-top: 10px;">
 					      	<button type="submit"class="btn btn-primary">Submit</button>  
 					      </div>
@@ -257,9 +257,7 @@
 						</div>
 					</div>
 				</div>
-			
-	
-			
+		
 			
 			<!-- Footer -->
 			<footer id="footer">

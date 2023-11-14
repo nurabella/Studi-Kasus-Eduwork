@@ -103,22 +103,24 @@
 						<!-- Products Grid -->
 
 						<div class="tab-pane active" id="products-grid">
-							<a class='btn btn-primary' href='add_produk.php'>Add Customer</a>
+							<a class='btn btn-primary' href='add_customer.php'>Add Customer</a>
 							<div class="products-block">
 								<div class="row">
 									<div class="col-lg-4 col-md-4 col-sm-6 col-xs-12">
 										<div class="product-item">
+
 											<div class="product-image">
 												<a href="product-detail-left-sidebar.php">
-													<img class="img-responsive" src="img/product/4.jpg" alt="Product Image">
+													<img class="img-responsive" src="img/p1.jpg" alt="Product Image">
 												</a>
 											</div>
 
 											<a class="post-title" >Nama</a>
+
 											<div class="post-info">
 												<span class="telpon item"><i class="fa fa-phone" aria-hidden="true"></i>Telpon</span>
 												<span class="gender item"><i class="fa fa-venus-mars"></i>Jenis Kelamin</span>
-												<span class="date item"><i class="fa fa-building"></i>Alamat <br> <span class="post-readmore"><a href="blog-detail.php">view more</a></span>
+												<span class="date item"><i class="fa fa-building"></i>Alamat</span>
 											</div>
 											
 											
@@ -126,8 +128,7 @@
 												<a class="add-to-cart" href="#">
 													<i class="fa fa-trash" aria-hidden="true"></i>
 												</a>
-												
-												
+											
 												<a class="quickview" href="edit_customer.php">
 													<i class="fa fa-edit" aria-hidden="true"></i>
 												</a>
