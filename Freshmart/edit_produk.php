@@ -89,7 +89,7 @@
 				<!-- Breadcrumb -->
 				<div id="breadcrumb">
 					<div class="container">
-						<h2 class="title">Add Product</h2>
+						<h2 class="title">Edit Product</h2>
 						
 						<ul class="breadcrumb">
 							<li><a href="#" title="Home">Fruits</a></li>

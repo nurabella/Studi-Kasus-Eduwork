@@ -220,32 +220,32 @@
 							<!--add Products -->
 							<form action="proses_add_produk.php" method="POST" name="form-input-data">
 								<div class="mb-3">
-							    <label for="exampleInputGambar" class="form-label">Gambar</label>
+							    <label for="exampleInputGambar" class="form-label">Foto</label>
 							    <input type="file" value="upload gambar" class="form-control" required="" autocomplete="off">
 							  </div>
 							  <div class="mb-3">
-							    <label for="exampleInputNama" class="form-label">Nama Produk</label>
+							    <label for="exampleInputNama" class="form-label">Nama Custommer</label>
 							    <input type="text" name="nama_produk" id="name" class="form-control" required="" autocomplete="off">
 							  </div>
 							  <div class="mb-3">
-							    <label for="exampleInputKategori" class="form-label">Kategori</label>
-							    <select name="id_kategori"></select>
+							    <label for="exampleInputNama" class="form-label">Telpon</label>
+							    <input type="number" name="nama_produk" id="name" class="form-control" required="" autocomplete="off">
 							  </div>
 							  <div class="mb-3">
-							    <label for="exampleInputNama" class="form-label">Stok</label>
-							    <input type="number" name="stok" id="name" class="form-control" required="" autocomplete="off">
+							    <label for="exampleInputNama" class="form-label">Jenis Kelamin</label>
+							    <div class="form-check">
+			                      <input class="form-check-input" type="radio" name="sex"  value="Laki-laki" checked="" >
+			                      <label class="form-check-label"> Laki-laki</label>
+			                      </div>
+
+			                      <div class="form-check">
+			                      <input class="form-check-input" type="radio" name="sex"  value="Laki-laki" >
+			                      <label class="form-check-label"> Perempuan</label>
+			                    </div>
 							  </div>
 							  <div class="mb-3">
-							    <label for="exampleInputNama" class="form-label">Satuan</label>
-							    <input type="text" name="nama_produk" id="name" class="form-control" required="" autocomplete="off">
-							  </div>
-							  <div class="mb-3">
-							    <label for="exampleInputNama" class="form-label">Suplier</label>
-							    <select name="id_suplier"></select>
-							  </div>
-							  <div class="mb-3">
-							    <label for="exampleInputNama" class="form-label">Harga</label>
-							    <input type="number" name="harga_produk" id="name" class="form-control" required="" autocomplete="off">
+							    <label for="exampleInputNama" class="form-label">Alamat</label>
+							    <textarea class= "form-control" name="alamat" required="" autocomplete="off" ></textarea>
 							  </div>
 				                	
 					      </form>

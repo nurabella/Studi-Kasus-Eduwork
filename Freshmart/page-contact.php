@@ -59,19 +59,17 @@
 										<img src="img/product/product-category-2.png" alt="Product Category Image">
 										<a href="product.php" title="Fruits">Fruits</a>
 									</li>
-									
 									<li class="has-image">
 										<img src="img/product/product-category-4.png" alt="Product Category Image">
 										<a href="product.php" title="Juices">Juices</a>
 									</li>
-									
 								</ul>
 							</div>
 						</li>
 						
 						<li class="dropdown">
-							<a href="page-galery.php" title="Page">Galery</a>
-						</li>s
+							<a href="page-customer.php">Customer</a>
+						</li>
 						<li>
 							<a href="page-about-us.php">About Us</a>
 						</li>

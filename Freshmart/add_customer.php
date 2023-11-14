@@ -9,7 +9,7 @@
 		<title>FreshMart</title>
 		
 		<meta name="keywords" content="Organic, Fresh Food, Farm Store">
-		<meta name="description" content="FreshMart - Organic, Fresh Food, Farm Store php Template">
+		<meta name="description" content="FreshMart - Organic, Fresh Food, Farm Store  Template">
 		<meta name="author" content="tivatheme">
 		
 		<!-- Favicon -->
@@ -70,7 +70,7 @@
 						</li>
 						
 						<li class="dropdown">
-							<a href="page-galery.php" title="Page">Galery</a>
+							<a href="page-customer.php">Customer</a>
 						</li>
 						<li>
 							<a href="page-about-us.php">About Us</a>
@@ -83,154 +83,182 @@
 				</div>
 			</header>
 			
+			
 			<!-- Main Content -->
 			<div id="content" class="site-content">
 				<!-- Breadcrumb -->
 				<div id="breadcrumb">
 					<div class="container">
-						<h2 class="title">Our Galery</h2>
+						<h2 class="title">Add Product</h2>
 						
 						<ul class="breadcrumb">
-							<li><a href="home.php" title="Home">Home</a></li>
-							<li><span>Our Galery</span></li>
+							<li><a href="#" title="Home">Fruits</a></li>
+							<li><a href="#" title="Product">Vegetables</a></li>
+							<li><a href="#" title="Suplier">Juice</a></li>
 						</ul>
 					</div>
 				</div>
-			
-				<div class="container">
-					<div class="blog-list full-width">
-						<div class="posts-list">
-							<div class="row">
-								<div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
-									<div class="post-item">
-										<div class="post-image">
-											<a href="blog-detail.php">
-												<img class="img-responsive" src="img/blog/blog-1.jpg" alt="Blog Image">
-											</a>
-										</div>
-										<a class="post-title" href="blog-detail.php">5 Best Fruits To Make You Fresh And Healthy</a>
-										<div class="post-info">
-											<span class="comment item"><i class="zmdi zmdi-comments"></i>2 Comments</span>
-											<span class="date item"><i class="zmdi zmdi-calendar-note"></i>14 Mar, 2018</span>
-										</div>
-										<div class="post-description">
-											Proin gravida nibh vel velit auctor aliquet. Aenean sollicudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagit tis sem nibh id elit. Duis sed odio sit amet nibh vultate cursus a sit amet mauris. Proin gravida nibh vel velit...
-											<span class="post-readmore"><a href="blog-detail.php">view more</a></span>
+			<!--container-->
+	        <div class="container">
+					<div class="row">
+
+						<!-- Sidebar -->
+						<div id="left-column" class="sidebar col-lg-3 col-md-3 col-sm-3 col-xs-12">
+							<!-- Block - Product Categories -->
+							<div class="block product-categories">
+								<h3 class="block-title">Categories</h3>
+								
+								<div class="block-content">
+									<div class="item">
+										<span class="arrow collapsed" data-toggle="collapse" data-target="#vegetables" aria-expanded="false" role="button">
+											<i class="zmdi zmdi-minus"></i>
+											<i class="zmdi zmdi-plus"></i>
+										</span>
+										
+										<a class="category-title" href="product-grid-left-sidebar.php">Vegetables</a>
+										<div class="sub-category collapse" id="vegetables" aria-expanded="true" role="main">
+											<div class="item">
+												<a href="product-grid-left-sidebar.php">Tomato</a>
+											</div>
+											<div class="item">
+												<a href="product-grid-left-sidebar.php">Broccoli</a>
+											</div>
+											<div class="item">
+												<a href="product-grid-left-sidebar.php">Cabbage</a>
+											</div>
+											<div class="item">
+												<a href="product-grid-left-sidebar.php">Cucumber</a>
+											</div>
 										</div>
 									</div>
-								</div>
-								
-								<div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
-									<div class="post-item">
-										<div class="post-image">
-											<a href="blog-detail.php">
-												<img class="img-responsive" src="img/blog/blog-2.jpg" alt="Blog Image">
-											</a>
-										</div>
-										<a class="post-title" href="blog-detail.php">5 Best Fruits To Make You Fresh And Healthy</a>
-										<div class="post-info">
-											<span class="comment item"><i class="zmdi zmdi-comments"></i>2 Comments</span>
-											<span class="date item"><i class="zmdi zmdi-calendar-note"></i>14 Mar, 2018</span>
-										</div>
-										<div class="post-description">
-											Proin gravida nibh vel velit auctor aliquet. Aenean sollicudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagit tis sem nibh id elit. Duis sed odio sit amet nibh vultate cursus a sit amet mauris. Proin gravida nibh vel velit...
-											<span class="post-readmore"><a href="blog-detail.php">view more</a></span>
-										</div>
-									</div>
-								</div>
-								
-								<div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
-									<div class="post-item">
-										<div class="post-image">
-											<a href="blog-detail.php">
-												<img class="img-responsive" src="img/blog/blog-3.jpg" alt="Blog Image">
-											</a>
-										</div>
-										<a class="post-title" href="blog-detail.php">5 Best Fruits To Make You Fresh And Healthy</a>
-										<div class="post-info">
-											<span class="comment item"><i class="zmdi zmdi-comments"></i>2 Comments</span>
-											<span class="date item"><i class="zmdi zmdi-calendar-note"></i>14 Mar, 2018</span>
-										</div>
-										<div class="post-description">
-											Proin gravida nibh vel velit auctor aliquet. Aenean sollicudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagit tis sem nibh id elit. Duis sed odio sit amet nibh vultate cursus a sit amet mauris. Proin gravida nibh vel velit...
-											<span class="post-readmore"><a href="blog-detail.php">view more</a></span>
+									
+									<div class="item">
+										<span class="arrow collapsed" data-toggle="collapse" data-target="#fruits" aria-expanded="false" role="button">
+											<i class="zmdi zmdi-minus"></i>
+											<i class="zmdi zmdi-plus"></i>
+										</span>
+										
+										<a class="category-title" href="product-grid-left-sidebar.php">Fruits</a>
+										<div class="sub-category collapse" id="fruits" aria-expanded="true" role="main">
+											<div class="item">
+												<a href="product-grid-left-sidebar.php">Orange</a>
+											</div>
+											<div class="item">
+												<a href="product-grid-left-sidebar.php">Apple</a>
+											</div>
+											<div class="item">
+												<a href="product-grid-left-sidebar.php">Banana</a>
+											</div>
+											<div class="item">
+												<a href="product-grid-left-sidebar.php">Strawberry</a>
+											</div>
 										</div>
 									</div>
-								</div>
-								
-								<div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
-									<div class="post-item">
-										<div class="post-image">
-											<a href="blog-detail.php">
-												<img class="img-responsive" src="img/blog/blog-4.jpg" alt="Blog Image">
-											</a>
-										</div>
-										<a class="post-title" href="blog-detail.php">5 Best Fruits To Make You Fresh And Healthy</a>
-										<div class="post-info">
-											<span class="comment item"><i class="zmdi zmdi-comments"></i>2 Comments</span>
-											<span class="date item"><i class="zmdi zmdi-calendar-note"></i>14 Mar, 2018</span>
-										</div>
-										<div class="post-description">
-											Proin gravida nibh vel velit auctor aliquet. Aenean sollicudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagit tis sem nibh id elit. Duis sed odio sit amet nibh vultate cursus a sit amet mauris. Proin gravida nibh vel velit...
-											<span class="post-readmore"><a href="blog-detail.php">view more</a></span>
-										</div>
-									</div>
-								</div>
-								
-								<div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
-									<div class="post-item">
-										<div class="post-image">
-											<a href="blog-detail.php">
-												<img class="img-responsive" src="img/blog/blog-5.jpg" alt="Blog Image">
-											</a>
-										</div>
-										<a class="post-title" href="blog-detail.php">5 Best Fruits To Make You Fresh And Healthy</a>
-										<div class="post-info">
-											<span class="comment item"><i class="zmdi zmdi-comments"></i>2 Comments</span>
-											<span class="date item"><i class="zmdi zmdi-calendar-note"></i>14 Mar, 2018</span>
-										</div>
-										<div class="post-description">
-											Proin gravida nibh vel velit auctor aliquet. Aenean sollicudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagit tis sem nibh id elit. Duis sed odio sit amet nibh vultate cursus a sit amet mauris. Proin gravida nibh vel velit...
-											<span class="post-readmore"><a href="blog-detail.php">view more</a></span>
+									
+									<div class="item">
+										<span class="arrow collapsed" data-toggle="collapse" data-target="#juices" aria-expanded="false" role="button">
+											<i class="zmdi zmdi-minus"></i>
+											<i class="zmdi zmdi-plus"></i>
+										</span>
+										
+										<a class="category-title" href="product-grid-left-sidebar.php">Juices</a>
+										<div class="sub-category collapse" id="juices" aria-expanded="true" role="main">
+											<div class="item">
+												<a href="product-grid-left-sidebar.php">Orange Juices</a>
+											</div>
+											<div class="item">
+												<a href="product-grid-left-sidebar.php">Tomato Juices</a>
+											</div>
+											
 										</div>
 									</div>
+									
+									
 								</div>
-								
-								<div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
-									<div class="post-item">
-										<div class="post-image">
-											<a href="blog-detail.php">
-												<img class="img-responsive" src="img/blog/blog-6.jpg" alt="Blog Image">
-											</a>
-										</div>
-										<a class="post-title" href="blog-detail.php">5 Best Fruits To Make You Fresh And Healthy</a>
-										<div class="post-info">
-											<span class="comment item"><i class="zmdi zmdi-comments"></i>2 Comments</span>
-											<span class="date item"><i class="zmdi zmdi-calendar-note"></i>14 Mar, 2018</span>
-										</div>
-										<div class="post-description">
-											Proin gravida nibh vel velit auctor aliquet. Aenean sollicudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagit tis sem nibh id elit. Duis sed odio sit amet nibh vultate cursus a sit amet mauris. Proin gravida nibh vel velit...
-											<span class="post-readmore"><a href="blog-detail.php">view more</a></span>
+							</div>
+							
+							
+							<!-- Block - Filter -->
+							<div class="block product-filter">
+								<h3 class="block-title">Catalog</h3>
+							
+								<div class="block-content">
+									<div class="filter-item">
+										<h3 class="filter-title">Categories</h3>
+										
+										<div class="filter-content">
+											<ul>
+												<li>
+													<label class="check">
+														<span class="custom-checkbox">
+															<input type="checkbox">
+															<span class="checkmark"></span>
+														</span>
+														<a>Tomato <span class="quantity">(20)</span></a>
+													</label>
+												</li>
+												<li>
+													<label class="check">
+														<span class="custom-checkbox">
+															<input type="checkbox">
+															<span class="checkmark"></span>
+														</span>
+														<a>Broccoli <span class="quantity">(14)</span></a>
+													</label>
+												</li>
+											</ul>
 										</div>
 									</div>
 								</div>
 							</div>
+							
 						</div>
 						
-						<!-- Pagination Bar -->
-						<div class="pagination-bar">
-							<div class="pagination">
-								<ul class="page-list">
-									<li><a href="#" class="prev">Previous</a></li>
-									<li><a href="#" class="current">1</a></li>
-									<li><a href="#">2</a></li>
-									<li><a href="#" class="next">Next</a></li>
-								</ul>
+						<!-- Page Content -->
+						<div id="center-column" class="col-lg-9 col-md-9 col-sm-9 col-xs-12">
+							<div class="product-category-page">
+							<!--add Products -->
+							<form action="proses_add_produk.php" method="POST" name="form-input-data">
+								<div class="mb-3">
+							    <label for="exampleInputGambar" class="form-label">Foto</label>
+							    <input type="file" value="upload gambar" class="form-control" required="" autocomplete="off">
+							  </div>
+							  <div class="mb-3">
+							    <label for="exampleInputNama" class="form-label">Nama Custommer</label>
+							    <input type="text" name="nama_produk" id="name" class="form-control" required="" autocomplete="off">
+							  </div>
+							  <div class="mb-3">
+							    <label for="exampleInputNama" class="form-label">Telpon</label>
+							    <input type="number" name="nama_produk" id="name" class="form-control" required="" autocomplete="off">
+							  </div>
+							  <div class="mb-3">
+							    <label for="exampleInputNama" class="form-label">Jenis Kelamin</label>
+							    <div class="form-check">
+			                      <input class="form-check-input" type="radio" name="sex"  value="Laki-laki" checked="" >
+			                      <label class="form-check-label"> Laki-laki</label>
+			                      </div>
+
+			                      <div class="form-check">
+			                      <input class="form-check-input" type="radio" name="sex"  value="Laki-laki" >
+			                      <label class="form-check-label"> Perempuan</label>
+			                    </div>
+							  </div>
+							  <div class="mb-3">
+							    <label for="exampleInputNama" class="form-label">Alamat</label>
+							    <textarea class= "form-control" name="alamat" required="" autocomplete="off" ></textarea>
+							  </div>
+				                	
+					      </form>
+					      <div style="margin-top: 10px;">
+					      	<button type="submit"class="btn btn-primary">Submit</button>  
+					      </div>
+					      
 							</div>
 						</div>
 					</div>
 				</div>
-			</div>
+			
+	
 			
 			
 			<!-- Footer -->
@@ -457,5 +485,6 @@
 		<!-- Template CSS -->
 		<script src="js/main.js"></script>
 	</body>
+
 
 </php>

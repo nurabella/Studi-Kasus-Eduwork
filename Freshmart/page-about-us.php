@@ -70,7 +70,7 @@
 						</li>
 						
 						<li class="dropdown">
-							<a href="page-galery.php" title="Page">Galery</a>
+							<a href="page-customer.php">Customer</a>
 						</li>
 						<li>
 							<a href="page-about-us.php">About Us</a>
