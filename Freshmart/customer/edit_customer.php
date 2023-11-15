@@ -33,8 +33,8 @@
 		<link rel="stylesheet" href="../libs/slider-range/css/jslider.css">
 		
 		<!-- Template CSS -->
-		<link rel="stylesheet" href="css/style.css">
-		<link rel="stylesheet" href="css/reponsive.css">
+		<link rel="stylesheet" href="../css/style.css">
+		<link rel="stylesheet" href="../css/reponsive.css">
 	</head>
 	
 	<body class="home home-1">
@@ -48,7 +48,7 @@
 						</li>
 						
 						<li class="dropdown">
-							<a href="product.php" title="Product">Product</a>
+							<a href="../produk/product.php" title="Product">Product</a>
 							<div class="dropdown-menu">
 								<ul>
 									<li class="has-image">
@@ -215,17 +215,17 @@
 						</div>
 						<?php
 					      include "../connection.php";
-					      $isbn= $_GET['id_pelanggan'];
+					      $id_pelanggan= $_GET['id_pelanggan'];
 
 					      $pelanggans = mysqli_query($connection, "SELECT * FROM pelanggan");
 
 					      foreach ($pelanggans as $pelanggan){
-					        $gambar =  $pelanggan['gambar'];
+					        $foto =  $pelanggan['foto'];
 					        $nama_pelanggan = $pelanggan['nama_pelanggan'];
 					        $jenis_kelamin =  $pelanggan['jenis_kelamin'];
 					        $telpon= $pelanggan['telpon'];
 					        $alamat = $pelanggan['alamat'];
-					        $gambar = $pelanggan['gambar'];
+					       
 					        }
 					    ?>
 						
@@ -236,7 +236,7 @@
 							<form action="proses_add_produk.php" method="POST" name="form-input-data">
 								<div class="mb-3">
 							    <label for="exampleInputGambar" class="form-label">Foto</label>
-							    <input type="file" value="upload gambar" class="form-control" required="" autocomplete="off" value="<?php echo $gambar;?>">
+							    <input type="file" value="upload gambar" class="form-control" required="" autocomplete="off" value="<?php echo $foto;?>">
 							  </div>
 							  <div class="mb-3">
 							    <label for="exampleInputNama" class="form-label">Nama Custommer</label>

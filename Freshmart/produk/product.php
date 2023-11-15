@@ -273,7 +273,7 @@
 														</div>
 														
 														<div class="product-buttons">
-															<a class="add-to-cart" href="#">
+														<a class="add-to-cart"  onclick="return confirm ('hapus data ini?');" href="hapus_produk.php?id_produk=<?php echo $data ['id_produk']; ?>">
 																<i class="fa fa-trash" aria-hidden="true"></i>
 															</a>
 															

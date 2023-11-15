@@ -1,3 +1,5 @@
+<?php include '../connection.php'; ?>
+
 <!DOCTYPE php>
 <php lang="zxx">
 	
@@ -89,7 +91,7 @@
 				<!-- Breadcrumb -->
 				<div id="breadcrumb">
 					<div class="container">
-						<h2 class="title">All Product</h2>
+						<h2 class="title">Our Customer</h2>
 						
 						<ul class="breadcrumb">
 							<li><a href="#" title="Home">Home</a></li>
@@ -126,12 +128,42 @@
 								<div class="tab-content">
 
 									<!-- Products Grid -->
-									<?php   
+									
+									<?php 
+										if(isset($_GET['alert'])){
+											if($_GET['alert']=='gagal_ekstensi'){
+												?>
+												<div class="alert alert-warning alert-dismissible">
+													<button type="button" class="close" data-dismiss="alert" aria-hidden="true">×</button>
+													<h4><i class="icon fa fa-warning"></i> Peringatan !</h4>
+													Ekstensi Tidak Diperbolehkan
+												</div>								
+												<?php
+											}elseif($_GET['alert']=="gagal_ukuran"){
+												?>
+												<div class="alert alert-warning alert-dismissible">
+													<button type="button" class="close" data-dismiss="alert" aria-hidden="true">×</button>
+													<h4><i class="icon fa fa-check"></i> Peringatan !</h4>
+													Ukuran File terlalu Besar
+												</div> 								
+												<?php
+											}elseif($_GET['alert']=="berhasil"){
+												?>
+												<div class="alert alert-success alert-dismissible">
+													<button type="button" class="close" data-dismiss="alert" aria-hidden="true">×</button>
+													<h4><i class="icon fa fa-check"></i> Success</h4>
+													Berhasil Disimpan
+												</div> 								
+												<?php
+											}
+										}
+									?>
+									<div class="tab-pane active" id="products-grid">
+										<a class='btn btn-primary' href='add_customer.php'>Add Custommer</a>
+										<?php   
 										include "../connection.php";
 										$query = mysqli_query($connection, "SELECT * FROM pelanggan	");
 									?>
-									<div class="tab-pane active" id="products-grid">
-										<a class='btn btn-primary' href='add_produk.php'>Add Produk</a>
 										<div class="products-block">
 											<div class="row">
 												<?php 
@@ -147,7 +179,7 @@
 
 														<div class="product-image">
 															<a href="product-detail-left-sidebar.php">
-																<img class="img-responsive" src="../img/product/4.jpg" alt="Product Image">
+															<img src="images/<?php $data['foto']?>" width='200' height='100'>
 															</a>
 														</div>
 														
@@ -165,11 +197,11 @@
 														
 														
 														<div class="product-buttons">
-															<a class="add-to-cart" href="#">
+															<a class="add-to-cart"  onclick="return confirm ('hapus data ini?');" href="hapus_customer.php?id_pelanggan=<?php echo $data ['id_pelanggan']; ?>">
 																<i class="fa fa-trash" aria-hidden="true"></i>
 															</a>
 															
-															<a class="quickview" href="edit_produk.php">
+															<a class="quickview" href="edit_customer.php">
 																<i class="fa fa-edit" aria-hidden="true"></i>
 															</a>
 														</div>

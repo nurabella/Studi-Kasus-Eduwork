@@ -241,11 +241,15 @@
 											
 											<div class="product-buttons">
 												<a class="add-to-cart" href="#">
-													<i class="fa fa-trash" aria-hidden="true"></i>
+													<i class="fa fa-shopping-basket" aria-hidden="true"></i>
 												</a>
 												
-												<a class="quickview" href="edit_produk.php">
-													<i class="fa fa-edit" aria-hidden="true"></i>
+												<a class="add-wishlist" href="#">
+													<i class="fa fa-heart" aria-hidden="true"></i>												
+												</a>
+												
+												<a class="quickview" href="#">
+													<i class="fa fa-eye" aria-hidden="true"></i>
 												</a>
 											</div>
 										</div>
@@ -290,11 +294,15 @@
 											
 											<div class="product-buttons">
 												<a class="add-to-cart" href="#">
-													<i class="fa fa-trash" aria-hidden="true"></i>
+													<i class="fa fa-shopping-basket" aria-hidden="true"></i>
 												</a>
 												
-												<a class="quickview" href="edit_produk.php">
-													<i class="fa fa-edit" aria-hidden="true"></i>
+												<a class="add-wishlist" href="#">
+													<i class="fa fa-heart" aria-hidden="true"></i>												
+												</a>
+												
+												<a class="quickview" href="#">
+													<i class="fa fa-eye" aria-hidden="true"></i>
 												</a>
 											</div>
 										</div>
@@ -339,11 +347,15 @@
 											
 											<div class="product-buttons">
 												<a class="add-to-cart" href="#">
-													<i class="fa fa-trash" aria-hidden="true"></i>
+													<i class="fa fa-shopping-basket" aria-hidden="true"></i>
 												</a>
 												
-												<a class="quickview" href="edit_produk.php">
-													<i class="fa fa-edit" aria-hidden="true"></i>
+												<a class="add-wishlist" href="#">
+													<i class="fa fa-heart" aria-hidden="true"></i>												
+												</a>
+												
+												<a class="quickview" href="#">
+													<i class="fa fa-eye" aria-hidden="true"></i>
 												</a>
 											</div>
 										</div>
@@ -387,14 +399,18 @@
 											</div>
 											
 											<div class="product-buttons">
-												<a class="add-to-cart" href="#">
-													<i class="fa fa-trash" aria-hidden="true"></i>
-												</a>
-												
-												<a class="quickview" href="edit_produk.php">
-													<i class="fa fa-edit" aria-hidden="true"></i>
-												</a>
-											</div>
+													<a class="add-to-cart" href="#">
+														<i class="fa fa-shopping-basket" aria-hidden="true"></i>
+													</a>
+													
+													<a class="add-wishlist" href="#">
+														<i class="fa fa-heart" aria-hidden="true"></i>												
+													</a>
+													
+													<a class="quickview" href="#">
+														<i class="fa fa-eye" aria-hidden="true"></i>
+													</a>
+												</div>
 										</div>
 									
 								<?php } ?>

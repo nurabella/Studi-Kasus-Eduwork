@@ -48,7 +48,7 @@
 						</li>
 						
 						<li class="dropdown">
-							<a href="product.php" title="Product">Product</a>
+							<a href="produk/product.php" title="Product">Product</a>
 							<div class="dropdown-menu">
 								<ul>
 									<li class="has-image">
@@ -68,7 +68,7 @@
 						</li>
 						
 						<li class="dropdown">
-							<a href="page-customer.php">Customer</a>
+							<a href="customer/page-customer.php">Customer</a>
 						</li>
 						<li>
 							<a href="page-about-us.php">About Us</a>
