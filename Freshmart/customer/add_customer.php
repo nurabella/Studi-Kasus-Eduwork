@@ -9,11 +9,11 @@
 		<title>FreshMart</title>
 		
 		<meta name="keywords" content="Organic, Fresh Food, Farm Store">
-		<meta name="description" content="FreshMart - Organic, Fresh Food, Farm Store php Template">
+		<meta name="description" content="FreshMart - Organic, Fresh Food, Farm Store  Template">
 		<meta name="author" content="tivatheme">
 		
 		<!-- Favicon -->
-		<link rel="shortcut icon" href="img/favicon.png" type="image/png">
+		<link rel="shortcut icon" href="../img/favicon.png" type="image/png">
 		
 		<!-- Mobile Meta -->
 		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
@@ -70,7 +70,7 @@
 						</li>
 						
 						<li class="dropdown">
-							<a href="page-customer.php">Customer</a>
+							<a href="../customer/page-customer.php">Customer</a>
 						</li>
 						<li>
 							<a href="page-about-us.php">About Us</a>
@@ -83,66 +83,182 @@
 				</div>
 			</header>
 			
+			
 			<!-- Main Content -->
 			<div id="content" class="site-content">
 				<!-- Breadcrumb -->
 				<div id="breadcrumb">
 					<div class="container">
-						<h2 class="title">Our Customer</h2>
+						<h2 class="title">Add Product</h2>
+						
 						<ul class="breadcrumb">
-							<li><a href="home.php" title="Home">Home</a></li>
-							<li><span>Our Customer</span></li>	
+							<li><a href="#" title="Home">Fruits</a></li>
+							<li><a href="#" title="Product">Vegetables</a></li>
+							<li><a href="#" title="Suplier">Juice</a></li>
 						</ul>
 					</div>
 				</div>
-				
-				<div class="container">
+			<!--container-->
+	        <div class="container">
+					<div class="row">
 
-					<div class="tab-content">
-
-						<!-- Products Grid -->
-
-						<div class="tab-pane active" id="products-grid">
-							<a class='btn btn-primary' href='add_customer.php'>Add Customer</a>
-							<div class="products-block">
-								<div class="row">
-									<div class="col-lg-4 col-md-4 col-sm-6 col-xs-12">
-										<div class="product-item">
-
-											<div class="product-image">
-												<a href="product-detail-left-sidebar.php">
-													<img class="img-responsive" src="img/p1.jpg" alt="Product Image">
-												</a>
+						<!-- Sidebar -->
+						<div id="left-column" class="sidebar col-lg-3 col-md-3 col-sm-3 col-xs-12">
+							<!-- Block - Product Categories -->
+							<div class="block product-categories">
+								<h3 class="block-title">Categories</h3>
+								
+								<div class="block-content">
+									<div class="item">
+										<span class="arrow collapsed" data-toggle="collapse" data-target="#vegetables" aria-expanded="false" role="button">
+											<i class="zmdi zmdi-minus"></i>
+											<i class="zmdi zmdi-plus"></i>
+										</span>
+										
+										<a class="category-title" href="product-grid-left-sidebar.php">Vegetables</a>
+										<div class="sub-category collapse" id="vegetables" aria-expanded="true" role="main">
+											<div class="item">
+												<a href="product-grid-left-sidebar.php">Tomato</a>
 											</div>
-
-											<a class="post-title" >Nama</a>
-
-											<div class="post-info">
-												<span class="telpon item"><i class="fa fa-phone" aria-hidden="true"></i>Telpon</span>
-												<span class="gender item"><i class="fa fa-venus-mars"></i>Jenis Kelamin</span>
-												<span class="date item"><i class="fa fa-building"></i>Alamat</span>
+											<div class="item">
+												<a href="product-grid-left-sidebar.php">Broccoli</a>
 											</div>
-											
-											
-											<div class="product-buttons">
-												<a class="add-to-cart" href="#">
-													<i class="fa fa-trash" aria-hidden="true"></i>
-												</a>
-											
-												<a class="quickview" href="edit_customer.php">
-													<i class="fa fa-edit" aria-hidden="true"></i>
-												</a>
+											<div class="item">
+												<a href="product-grid-left-sidebar.php">Cabbage</a>
+											</div>
+											<div class="item">
+												<a href="product-grid-left-sidebar.php">Cucumber</a>
 											</div>
 										</div>
 									</div>
 									
+									<div class="item">
+										<span class="arrow collapsed" data-toggle="collapse" data-target="#fruits" aria-expanded="false" role="button">
+											<i class="zmdi zmdi-minus"></i>
+											<i class="zmdi zmdi-plus"></i>
+										</span>
+										
+										<a class="category-title" href="product-grid-left-sidebar.php">Fruits</a>
+										<div class="sub-category collapse" id="fruits" aria-expanded="true" role="main">
+											<div class="item">
+												<a href="product-grid-left-sidebar.php">Orange</a>
+											</div>
+											<div class="item">
+												<a href="product-grid-left-sidebar.php">Apple</a>
+											</div>
+											<div class="item">
+												<a href="product-grid-left-sidebar.php">Banana</a>
+											</div>
+											<div class="item">
+												<a href="product-grid-left-sidebar.php">Strawberry</a>
+											</div>
+										</div>
+									</div>
+									
+									<div class="item">
+										<span class="arrow collapsed" data-toggle="collapse" data-target="#juices" aria-expanded="false" role="button">
+											<i class="zmdi zmdi-minus"></i>
+											<i class="zmdi zmdi-plus"></i>
+										</span>
+										
+										<a class="category-title" href="product-grid-left-sidebar.php">Juices</a>
+										<div class="sub-category collapse" id="juices" aria-expanded="true" role="main">
+											<div class="item">
+												<a href="product-grid-left-sidebar.php">Orange Juices</a>
+											</div>
+											<div class="item">
+												<a href="product-grid-left-sidebar.php">Tomato Juices</a>
+											</div>
+											
+										</div>
+									</div>
+									
+									
 								</div>
 							</div>
+							
+							
+							<!-- Block - Filter -->
+							<div class="block product-filter">
+								<h3 class="block-title">Catalog</h3>
+							
+								<div class="block-content">
+									<div class="filter-item">
+										<h3 class="filter-title">Categories</h3>
+										
+										<div class="filter-content">
+											<ul>
+												<li>
+													<label class="check">
+														<span class="custom-checkbox">
+															<input type="checkbox">
+															<span class="checkmark"></span>
+														</span>
+														<a>Tomato <span class="quantity">(20)</span></a>
+													</label>
+												</li>
+												<li>
+													<label class="check">
+														<span class="custom-checkbox">
+															<input type="checkbox">
+															<span class="checkmark"></span>
+														</span>
+														<a>Broccoli <span class="quantity">(14)</span></a>
+													</label>
+												</li>
+											</ul>
+										</div>
+									</div>
+								</div>
+							</div>
+							
 						</div>
-									
+						
+						<!-- Page Content -->
+						<div id="center-column" class="col-lg-9 col-md-9 col-sm-9 col-xs-12">
+							<div class="product-category-page">
+							<!--add Products -->
+							<form action="proses_add_produk.php" method="POST" name="form-input-data">
+							<div class="mb-3">
+							    <label for="exampleInputGambar" class="form-label">Foto</label>
+							    <input type="file" name="gambar" required="" autocomplete="off">
+							  </div>
+							  <div class="mb-3">
+							    <label for="exampleInputNama" class="form-label">Nama Custommer</label>
+							    <input type="text" name="nama_produk" id="name" class="form-control" required="" autocomplete="off">
+							  </div>
+							  <div class="mb-3">
+							    <label for="exampleInputNama" class="form-label">Telpon</label>
+							    <input type="number" name="nama_produk" id="name" class="form-control" required="" autocomplete="off">
+							  </div>
+							  <div class="mb-3">
+							    <label for="exampleInputNama" class="form-label">Jenis Kelamin</label>
+							    <div class="form-check">
+			                      <input class="form-check-input" type="radio" name="sex"  value="Laki-laki" checked="" >
+			                      <label class="form-check-label"> Laki-laki</label>
+			                      </div>
+
+			                      <div class="form-check">
+			                      <input class="form-check-input" type="radio" name="sex"  value="Laki-laki" >
+			                      <label class="form-check-label"> Perempuan</label>
+			                    </div>
+							  </div>
+							  <div class="mb-3">
+							    <label for="exampleInputNama" class="form-label">Alamat</label>
+							    <textarea class= "form-control" name="alamat" required="" autocomplete="off" ></textarea>
+							  </div>
+				                	
+					      </form>
+					      <div style="margin-top: 10px;">
+					      	<button type="submit"class="btn btn-primary">Submit</button>  
+					      </div>
+					      
+							</div>
+						</div>
 					</div>
 				</div>
-			</div>
+			
+	
 			
 			
 			<!-- Footer -->
@@ -369,5 +485,6 @@
 		<!-- Template CSS -->
 		<script src="js/main.js"></script>
 	</body>
+
 
 </php>

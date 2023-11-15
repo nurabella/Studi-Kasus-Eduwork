@@ -13,7 +13,7 @@
 		<meta name="author" content="tivatheme">
 		
 		<!-- Favicon -->
-		<link rel="shortcut icon" href="img/favicon.png" type="image/png">
+		<link rel="shortcut icon" href="../img/favicon.png" type="image/png">
 		
 		<!-- Mobile Meta -->
 		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
@@ -23,18 +23,18 @@
 		<link href="https://fonts.googleapis.com/css?family=Playfair+Display:300,400,700" rel="stylesheet">
 		
 		<!-- Vendor CSS -->
-		<link rel="stylesheet" href="libs/bootstrap/css/bootstrap.css">
-		<link rel="stylesheet" href="libs/font-awesome/css/font-awesome.min.css">
-		<link rel="stylesheet" href="libs/font-material/css/material-design-iconic-font.min.css">
-		<link rel="stylesheet" href="libs/nivo-slider/css/nivo-slider.css">
-		<link rel="stylesheet" href="libs/nivo-slider/css/animate.css">
-		<link rel="stylesheet" href="libs/nivo-slider/css/style.css">
-		<link rel="stylesheet" href="libs/owl.carousel/assets/owl.carousel.min.css">
-		<link rel="stylesheet" href="libs/slider-range/css/jslider.css">
+		<link rel="stylesheet" href="../libs/bootstrap/css/bootstrap.css">
+		<link rel="stylesheet" href="../libs/font-awesome/css/font-awesome.min.css">
+		<link rel="stylesheet" href="../libs/font-material/css/material-design-iconic-font.min.css">
+		<link rel="stylesheet" href="../libs/nivo-slider/css/nivo-slider.css">
+		<link rel="stylesheet" href="../libs/nivo-slider/css/animate.css">
+		<link rel="stylesheet" href="../libs/nivo-slider/css/style.css">
+		<link rel="stylesheet" href="../libs/owl.carousel/assets/owl.carousel.min.css">
+		<link rel="stylesheet" href="../libs/slider-range/css/jslider.css">
 		
 		<!-- Template CSS -->
-		<link rel="stylesheet" href="css/style.css">
-		<link rel="stylesheet" href="css/reponsive.css">
+		<link rel="stylesheet" href="../css/style.css">
+		<link rel="stylesheet" href="../css/reponsive.css">
 	</head>
 	
 	<body class="home home-1">
@@ -52,16 +52,16 @@
 							<div class="dropdown-menu">
 								<ul>
 									<li class="has-image">
-										<img src="img/product/product-category-1.png" alt="Product Category Image">
+										<img src="../img/product/product-category-1.png" alt="Product Category Image">
 										<a href="product.php" title="Vegetables">Vegetables</a>
 									</li>
 									<li class="has-image">
-										<img src="img/product/product-category-2.png" alt="Product Category Image">
+										<img src="../img/product/product-category-2.png" alt="Product Category Image">
 										<a href="product.php" title="Fruits">Fruits</a>
 									</li>
 									
 									<li class="has-image">
-										<img src="img/product/product-category-4.png" alt="Product Category Image">
+										<img src="../img/product/product-category-4.png" alt="Product Category Image">
 										<a href="product.php" title="Juices">Juices</a>
 									</li>
 									
@@ -89,7 +89,7 @@
 				<!-- Breadcrumb -->
 				<div id="breadcrumb">
 					<div class="container">
-						<h2 class="title">Add Product</h2>
+						<h2 class="title">Edit Product</h2>
 						
 						<ul class="breadcrumb">
 							<li><a href="#" title="Home">Fruits</a></li>
@@ -247,8 +247,8 @@
 							    <label for="exampleInputNama" class="form-label">Harga</label>
 							    <input type="number" name="harga_produk" id="name" class="form-control" required="" autocomplete="off">
 							  </div>
+				                	
 					      </form>
-
 					      <div style="margin-top: 10px;">
 					      	<button type="submit"class="btn btn-primary">Submit</button>  
 					      </div>
@@ -257,7 +257,9 @@
 						</div>
 					</div>
 				</div>
-		
+			
+	
+			
 			
 			<!-- Footer -->
 			<footer id="footer">
@@ -270,7 +272,7 @@
 									<div class="block text">
 										<div class="block-content">
 											<a href="index.php" class="logo-footer">
-												<img src="img/logo-2.png" alt="Logo">
+												<img src="../img/logo-2.png" alt="Logo">
 											</a>
 									
 											<div class="contact">
@@ -311,42 +313,42 @@
 											<div class="row margin-0">
 												<div class="col-xs-3 col-sm-3 col-md-3 col-lg-3 padding-0">
 													<a href="#">
-														<img src="img/instagram-1.png" alt="Instagram Image">
+														<img src="../img/instagram-1.png" alt="Instagram Image">
 													</a>
 												</div>
 												<div class="col-xs-3 col-sm-3 col-md-3 col-lg-3 padding-0">
 													<a href="#">
-														<img src="img/instagram-2.png" alt="Instagram Image">
+														<img src="../img/instagram-2.png" alt="Instagram Image">
 													</a>
 												</div>
 												<div class="col-xs-3 col-sm-3 col-md-3 col-lg-3 padding-0">
 													<a href="#">
-														<img src="img/instagram-3.png" alt="Instagram Image">
+														<img src="../img/instagram-3.png" alt="Instagram Image">
 													</a>
 												</div>
 												<div class="col-xs-3 col-sm-3 col-md-3 col-lg-3 padding-0">
 													<a href="#">
-														<img src="img/instagram-4.png" alt="Instagram Image">
+														<img src="../img/instagram-4.png" alt="Instagram Image">
 													</a>
 												</div>
 												<div class="col-xs-3 col-sm-3 col-md-3 col-lg-3 padding-0">
 													<a href="#">
-														<img src="img/instagram-5.png" alt="Instagram Image">
+														<img src="../img/instagram-5.png" alt="Instagram Image">
 													</a>
 												</div>
 												<div class="col-xs-3 col-sm-3 col-md-3 col-lg-3 padding-0">
 													<a href="#">
-														<img src="img/instagram-6.png" alt="Instagram Image">
+														<img src="../img/instagram-6.png" alt="Instagram Image">
 													</a>
 												</div>
 												<div class="col-xs-3 col-sm-3 col-md-3 col-lg-3 padding-0">
 													<a href="#">
-														<img src="img/instagram-7.png" alt="Instagram Image">
+														<img src="../img/instagram-7.png" alt="Instagram Image">
 													</a>
 												</div>
 												<div class="col-xs-3 col-sm-3 col-md-3 col-lg-3 padding-0">
 													<a href="#">
-														<img src="img/instagram-8.png" alt="Instagram Image">
+														<img src="../img/instagram-8.png" alt="Instagram Image">
 													</a>
 												</div>
 											</div>
@@ -392,7 +394,7 @@
 									<div class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
 										<div class="item d-flex">
 											<div class="item-left">
-												<img src="img/home1-payment-1.png" alt="Payment Intro">
+												<img src="../img/home1-payment-1.png" alt="Payment Intro">
 											</div>
 											<div class="item-right">
 												<h3 class="title">Free Shipping item</h3>
@@ -404,7 +406,7 @@
 									<div class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
 										<div class="item d-flex">
 											<div class="item-left">
-												<img src="img/home1-payment-2.png" alt="Payment Intro">
+												<img src="../img/home1-payment-2.png" alt="Payment Intro">
 											</div>
 											<div class="item-right">
 												<h3 class="title">Secured Payment</h3>
@@ -416,7 +418,7 @@
 									<div class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
 										<div class="item d-flex">
 											<div class="item-left">
-												<img src="img/home1-payment-3.png" alt="Payment Intro">
+												<img src="../img/home1-payment-3.png" alt="Payment Intro">
 											</div>
 											<div class="item-right">
 												<h3 class="title">Money Back Guarantee</h3>
@@ -441,7 +443,7 @@
 							<div class="col-lg-5 col-md-5 col-sm-5 col-xs-12 align-right">
 								<div class="payment">
 									<span>Payment Accept</span>
-									<img src="img/payment.png" alt="Payment">
+									<img src="../img/payment.png" alt="Payment">
 								</div>
 							</div>
 						</div>
@@ -469,19 +471,19 @@
 		</div>
 			
 		<!-- Vendor JS -->
-		<script src="libs/jquery/jquery.js"></script>
-		<script src="libs/bootstrap/js/bootstrap.js"></script>
-		<script src="libs/jquery.countdown/jquery.countdown.js"></script>
-		<script src="libs/nivo-slider/js/jquery.nivo.slider.js"></script>
-		<script src="libs/owl.carousel/owl.carousel.min.js"></script>
-		<script src="libs/slider-range/js/tmpl.js"></script>
-		<script src="libs/slider-range/js/jquery.dependClass-0.1.js"></script>
-		<script src="libs/slider-range/js/draggable-0.1.js"></script>
-		<script src="libs/slider-range/js/jquery.slider.js"></script>
-		<script src="libs/elevatezoom/jquery.elevatezoom.js"></script>
+		<script src="../libs/jquery/jquery.js"></script>
+		<script src="../libs/bootstrap/js/bootstrap.js"></script>
+		<script src="../libs/jquery.countdown/jquery.countdown.js"></script>
+		<script src="../libs/nivo-slider/js/jquery.nivo.slider.js"></script>
+		<script src="../libs/owl.carousel/owl.carousel.min.js"></script>
+		<script src="../libs/slider-range/js/tmpl.js"></script>
+		<script src="../libs/slider-range/js/jquery.dependClass-0.1.js"></script>
+		<script src="../libs/slider-range/js/draggable-0.1.js"></script>
+		<script src="../libs/slider-range/js/jquery.slider.js"></script>
+		<script src="../libs/elevatezoom/jquery.elevatezoom.js"></script>
 		
 		<!-- Template CSS -->
-		<script src="js/main.js"></script>
+		<script src="../js/main.js"></script>
 	</body>
 
 

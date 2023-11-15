@@ -3,9 +3,9 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Waktu pembuatan: 10 Nov 2023 pada 13.34
+-- Waktu pembuatan: 15 Nov 2023 pada 09.15
 -- Versi server: 10.4.28-MariaDB
--- Versi PHP: 8.0.28
+-- Versi PHP: 8.2.4
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 START TRANSACTION;
@@ -71,9 +71,7 @@ CREATE TABLE `order` (
 --
 
 INSERT INTO `order` (`id_order`, `tanggal`, `id_pelanggan`, `id_produk`, `qty`) VALUES
-(1, '2023-11-10', 1, 1, 5),
-(2, '2023-11-10', 2, 1, 5),
-(3, '2023-11-10', 1, 2, 5);
+(2, '2023-11-10', 2, 1, 5);
 
 --
 -- Trigger `order`
@@ -95,16 +93,17 @@ CREATE TABLE `pelanggan` (
   `nama_pelanggan` varchar(100) NOT NULL,
   `jenis_kelamin` enum('pria','wanita') NOT NULL,
   `telpon` int(20) NOT NULL,
-  `alamat` text NOT NULL
+  `alamat` text NOT NULL,
+  `gambar` varchar(225) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
 --
 -- Dumping data untuk tabel `pelanggan`
 --
 
-INSERT INTO `pelanggan` (`id_pelanggan`, `nama_pelanggan`, `jenis_kelamin`, `telpon`, `alamat`) VALUES
-(1, 'Bela', 'wanita', 897567465, 'Bandung'),
-(2, 'Rizki', 'pria', 897646532, 'Bandung');
+INSERT INTO `pelanggan` (`id_pelanggan`, `nama_pelanggan`, `jenis_kelamin`, `telpon`, `alamat`, `gambar`) VALUES
+(2, 'Rizki', 'pria', 897646532, 'Bandung', ''),
+(4, 'bella', 'wanita', 897567465, 'bandung', '');
 
 -- --------------------------------------------------------
 
@@ -143,7 +142,11 @@ CREATE TABLE `produk` (
 INSERT INTO `produk` (`id_produk`, `nama_produk`, `id_kategori`, `stok`, `satuan`, `id_suplier`, `harga`) VALUES
 (1, 'Apel', 1, 45, 'kg', 1, 25000),
 (2, 'Tomat', 2, 35, 'kg', 2, 17000),
-(3, 'Brokoli', 2, 40, 'kg', 2, 20000);
+(3, 'Brokoli', 2, 40, 'kg', 2, 20000),
+(4, 'Jeruk', 1, 50, 'kg', 2, 20000),
+(5, 'Mangga', 1, 40, 'kg', 1, 17000),
+(6, 'Rambutan', 1, 12, 'kg', 1, 12000),
+(7, 'Semangka', 1, 50, 'kg', 1, 20000);
 
 -- --------------------------------------------------------
 
@@ -242,7 +245,7 @@ ALTER TABLE `order`
 -- AUTO_INCREMENT untuk tabel `pelanggan`
 --
 ALTER TABLE `pelanggan`
-  MODIFY `id_pelanggan` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
+  MODIFY `id_pelanggan` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=5;
 
 --
 -- AUTO_INCREMENT untuk tabel `pembayaran`
@@ -254,7 +257,7 @@ ALTER TABLE `pembayaran`
 -- AUTO_INCREMENT untuk tabel `produk`
 --
 ALTER TABLE `produk`
-  MODIFY `id_produk` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
+  MODIFY `id_produk` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=8;
 
 --
 -- AUTO_INCREMENT untuk tabel `suplier`
