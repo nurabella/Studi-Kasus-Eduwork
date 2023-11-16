@@ -6,11 +6,11 @@ $stok = $_POST['stok'];
 $satuan= $_POST['satuan'];
 $harga = $_POST['harga'];
 $id_suplier = $_POST['id_suplier'];
-$foto = $_FILES['foto']['name'];
 
 
-$result = mysqli_query($connection, "INSERT INTO produk (nama_produk,id_kategori,stok,satuan,id_suplier,foto) 
-VALUES ('$nama_produk','$id_kategori', '$stok','$satuan' , '$id_suplier','$foto'	) ");
+
+$result = mysqli_query($connection, "INSERT INTO produk (nama_produk,id_kategori,stok,satuan,id_suplier) 
+VALUES ('$nama_produk','$id_kategori', '$stok','$satuan' , '$id_suplier'	) ");
 
 header("Location:product.php");
 

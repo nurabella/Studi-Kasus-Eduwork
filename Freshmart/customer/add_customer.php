@@ -218,10 +218,10 @@
 						<div id="center-column" class="col-lg-9 col-md-9 col-sm-9 col-xs-12">
 							<div class="">
 							<!--add Products -->
-							<form action="proses_add_customer.php" method="POST" enctype="multipart/form-data"  name="form-input-data">
+						<form action="proses_add_customer"method="POST" name="form-input-data" enctype="multipart/form-data">
 							<div class="mb-3">
 							    <label for="exampleInputGambar" class="form-label">Foto</label>
-							    <input type="file" name="foto" id="foto" accept=".jpg, .jpeg, .png"  required="" autocomplete="off">
+							    <input type="file" name="foto" id="foto" accept=".jpg, .jpeg, .png" // required="" autocomplete="off">
 							  </div>
 							  <div class="mb-3">
 							    <label for="exampleInputNama" class="form-label">Nama Custommer</label>

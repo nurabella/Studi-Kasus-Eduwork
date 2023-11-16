@@ -179,7 +179,7 @@
 
 														<div class="product-image">
 															<a href="product-detail-left-sidebar.php">
-															<img src="images/<?php $data['foto']?>" width='200' height='100'>
+															<img src="images/" width='200' height='100'>
 															</a>
 														</div>
 														

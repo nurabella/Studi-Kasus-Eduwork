@@ -220,7 +220,6 @@
 					      $pelanggans = mysqli_query($connection, "SELECT * FROM pelanggan");
 
 					      foreach ($pelanggans as $pelanggan){
-					        $foto =  $pelanggan['foto'];
 					        $nama_pelanggan = $pelanggan['nama_pelanggan'];
 					        $jenis_kelamin =  $pelanggan['jenis_kelamin'];
 					        $telpon= $pelanggan['telpon'];
@@ -236,7 +235,7 @@
 							<form action="proses_add_produk.php" method="POST" name="form-input-data">
 								<div class="mb-3">
 							    <label for="exampleInputGambar" class="form-label">Foto</label>
-							    <input type="file" value="upload gambar" class="form-control" required="" autocomplete="off" value="<?php echo $foto;?>">
+							    <input type="file" value="upload gambar" class="form-control" required="" autocomplete="off" >
 							  </div>
 							  <div class="mb-3">
 							    <label for="exampleInputNama" class="form-label">Nama Custommer</label>
