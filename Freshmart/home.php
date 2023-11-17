@@ -219,7 +219,7 @@
 										<div class="product-item">
 											<div class="product-image">
 												<a href="product-detail-left-sidebar.php">
-													<img class="img-responsive" src="img/product/4.jpg" alt="Product Image">
+													<img class="img-responsive" src="img/product/<?php echo $data['gambar'];?>" alt="Product Image">
 												</a>
 											</div>
 											

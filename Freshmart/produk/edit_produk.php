@@ -1,3 +1,6 @@
+
+
+
 <!DOCTYPE php>
 <php lang="zxx">
 	
@@ -44,7 +47,7 @@
 				<div id="main-menu">
 					<ul class="menu">
 						<li class="dropdown">
-							<a href="home.php" title="Homepage">Home</a>
+							<a href="../home.php" title="Homepage">Home</a>
 						</li>
 						
 						<li class="dropdown">
@@ -52,16 +55,16 @@
 							<div class="dropdown-menu">
 								<ul>
 									<li class="has-image">
-										<img src="../img/product/product-category-1.png" alt="Product Category Image">
+										<img src="img/product/product-category-1.png" alt="Product Category Image">
 										<a href="product.php" title="Vegetables">Vegetables</a>
 									</li>
 									<li class="has-image">
-										<img src="../img/product/product-category-2.png" alt="Product Category Image">
+										<img src="img/product/product-category-2.png" alt="Product Category Image">
 										<a href="product.php" title="Fruits">Fruits</a>
 									</li>
 									
 									<li class="has-image">
-										<img src="../img/product/product-category-4.png" alt="Product Category Image">
+										<img src="img/product/product-category-4.png" alt="Product Category Image">
 										<a href="product.php" title="Juices">Juices</a>
 									</li>
 									
@@ -70,14 +73,14 @@
 						</li>
 						
 						<li class="dropdown">
-							<a href="page-customer.php">Customer</a>
+							<a href="../customer/page-customer.php">Customer</a>
 						</li>
 						<li>
-							<a href="page-about-us.php">About Us</a>
+							<a href="../page-about-us.php">About Us</a>
 						</li>
 						
 						<li>
-							<a href="page-contact.php">Contact</a>
+							<a href="../page-contact.php">Contact</a>
 						</li>
 					</ul>
 				</div>
@@ -89,7 +92,7 @@
 				<!-- Breadcrumb -->
 				<div id="breadcrumb">
 					<div class="container">
-						<h2 class="title">Edit Product</h2>
+						<h2 class="title">Add Product</h2>
 						
 						<ul class="breadcrumb">
 							<li><a href="#" title="Home">Fruits</a></li>
@@ -215,51 +218,66 @@
 						</div>
 						
 						<!-- Page Content -->
+						<?php
+							include "../connection.php";
+							$id_produk = $_GET['id_produk'];
+
+							$produk = mysqli_query($connection,"SELECT * FROM produk WHERE id_produk='$id_produk'");
+							while($data = mysqli_fetch_array($produk)){
+								$nama_produk = $data['nama_produk'];
+								$id_kategori = $data['id_kategori'];
+								$stok = $data['stok'];
+								$satuan = $data['satuan'];
+								$harga = $data['harga'];
+								$gambar = $data['gambar'];
+							}
+						?>
 						<div id="center-column" class="col-lg-9 col-md-9 col-sm-9 col-xs-12">
 							<div class="product-category-page">
 							<!--add Products -->
-							<form action="proses_add_produk.php" method="POST" name="form-input-data">
-								<div class="mb-3">
-							    <label for="exampleInputGambar" class="form-label">Gambar</label>
-							    <input type="file" value="upload gambar" class="form-control" required="" autocomplete="off">
-							  </div>
-							  <div class="mb-3">
-							    <label for="exampleInputNama" class="form-label">Nama Produk</label>
-							    <input type="text" name="nama_produk" id="name" class="form-control" required="" autocomplete="off">
-							  </div>
-							  <div class="mb-3">
-							    <label for="exampleInputKategori" class="form-label">Kategori</label>
-							    <select name="id_kategori"></select>
-							  </div>
-							  <div class="mb-3">
-							    <label for="exampleInputNama" class="form-label">Stok</label>
-							    <input type="number" name="stok" id="name" class="form-control" required="" autocomplete="off">
-							  </div>
-							  <div class="mb-3">
-							    <label for="exampleInputNama" class="form-label">Satuan</label>
-							    <input type="text" name="nama_produk" id="name" class="form-control" required="" autocomplete="off">
-							  </div>
-							  <div class="mb-3">
-							    <label for="exampleInputNama" class="form-label">Suplier</label>
-							    <select name="id_suplier"></select>
-							  </div>
-							  <div class="mb-3">
-							    <label for="exampleInputNama" class="form-label">Harga</label>
-							    <input type="number" name="harga_produk" id="name" class="form-control" required="" autocomplete="off">
-							  </div>
-				                	
-					      </form>
-					      <div style="margin-top: 10px;">
-					      	<button type="submit"class="btn btn-primary">Submit</button>  
-					      </div>
-					      
+								<form action="proses_edit_produk.php?id_produk=<?php echo $id_produk; ?>" method="post" enctype="multipart/form-data">
+									<div class="mb-3">
+										<label class="form-label">Gambar</label>
+										<input type="file" name="gambar" class="form-control"  value="<?php echo $gambar; ?>">
+									</div>
+									<div class="mb-3">
+										<label for="exampleInputNama" class="form-label">Nama Produk</label>
+										<input type="text" name="nama_produk" class="form-control" required="" autocomplete="off" value="<?php echo $nama_produk; ?>">
+									</div>
+									<div>
+										<label for="exampleInputNama" class="form-label">Kategori</label>
+										<select class="form-control nice-select wide" name="id_kategori">
+											<?php  
+											include "../connection.php";
+											$query = mysqli_query($connection,"SELECT * FROM kategori");
+											while ($data = mysqli_fetch_array($query)) {            
+												echo "<option value=$data[id_kategori]> $data[nama_kategori]</option>";} 
+											?>
+										</select>
+									</div>
+									<div class="mb-3">
+										<label for="exampleInputNama" class="form-label">Stok</label>
+										<input type="number" name="stok" class="form-control" required="" autocomplete="off" value="<?php echo $stok; ?>">
+									</div>
+									<div class="mb-3">
+										<label for="exampleInputNama" class="form-label">Satuan</label>
+										<input type="text" name="satuan" class="form-control" required="" autocomplete="off" value="<?php echo $satuan; ?>">
+									</div>
+									<div class="mb-3">
+										<label for="exampleInputNama" class="form-label">Harga</label>
+										<input type="number" name="harga" class="form-control" required="" autocomplete="off" value="<?php echo $harga; ?>">
+									</div>
+									<div style="margin-top: 10px;">
+										<button type="submit" name="submit" class="btn btn-primary">
+											Tambah
+										</button>
+									</div>
+								</form>
 							</div>
 						</div>
 					</div>
 				</div>
-			
-	
-			
+		
 			
 			<!-- Footer -->
 			<footer id="footer">

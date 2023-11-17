@@ -73,7 +73,7 @@
 						</li>
 						
 						<li class="dropdown">
-							<a href="customer/page-customer.php">Customer</a>
+							<a href="../customer/page-customer.php">Customer</a>
 						</li>
 						<li>
 							<a href="../page-about-us.php">About Us</a>
@@ -103,163 +103,172 @@
 				</div>
 			<!--container-->
 	        <div class="container">
-					<div class="row">
+				<div class="row">
 
-						<!-- Sidebar -->
-						<div id="left-column" class="sidebar col-lg-3 col-md-3 col-sm-3 col-xs-12">
-							<!-- Block - Product Categories -->
-							<div class="block product-categories">
-								<h3 class="block-title">Categories</h3>
+					<!-- Sidebar -->
+					<div id="left-column" class="sidebar col-lg-3 col-md-3 col-sm-3 col-xs-12">
+						<!-- Block - Product Categories -->
+						<div class="block product-categories">
+							<h3 class="block-title">Categories</h3>
+							
+							<div class="block-content">
+								<div class="item">
+									<span class="arrow collapsed" data-toggle="collapse" data-target="#vegetables" aria-expanded="false" role="button">
+										<i class="zmdi zmdi-minus"></i>
+										<i class="zmdi zmdi-plus"></i>
+									</span>
+									
+									<a class="category-title" href="product-grid-left-sidebar.php">Vegetables</a>
+									<div class="sub-category collapse" id="vegetables" aria-expanded="true" role="main">
+										<div class="item">
+											<a href="product-grid-left-sidebar.php">Tomato</a>
+										</div>
+										<div class="item">
+											<a href="product-grid-left-sidebar.php">Broccoli</a>
+										</div>
+										<div class="item">
+											<a href="product-grid-left-sidebar.php">Cabbage</a>
+										</div>
+										<div class="item">
+											<a href="product-grid-left-sidebar.php">Cucumber</a>
+										</div>
+									</div>
+								</div>
 								
-								<div class="block-content">
-									<div class="item">
-										<span class="arrow collapsed" data-toggle="collapse" data-target="#vegetables" aria-expanded="false" role="button">
-											<i class="zmdi zmdi-minus"></i>
-											<i class="zmdi zmdi-plus"></i>
-										</span>
-										
-										<a class="category-title" href="product-grid-left-sidebar.php">Vegetables</a>
-										<div class="sub-category collapse" id="vegetables" aria-expanded="true" role="main">
-											<div class="item">
-												<a href="product-grid-left-sidebar.php">Tomato</a>
-											</div>
-											<div class="item">
-												<a href="product-grid-left-sidebar.php">Broccoli</a>
-											</div>
-											<div class="item">
-												<a href="product-grid-left-sidebar.php">Cabbage</a>
-											</div>
-											<div class="item">
-												<a href="product-grid-left-sidebar.php">Cucumber</a>
-											</div>
+								<div class="item">
+									<span class="arrow collapsed" data-toggle="collapse" data-target="#fruits" aria-expanded="false" role="button">
+										<i class="zmdi zmdi-minus"></i>
+										<i class="zmdi zmdi-plus"></i>
+									</span>
+									
+									<a class="category-title" href="product-grid-left-sidebar.php">Fruits</a>
+									<div class="sub-category collapse" id="fruits" aria-expanded="true" role="main">
+										<div class="item">
+											<a href="product-grid-left-sidebar.php">Orange</a>
 										</div>
-									</div>
-									
-									<div class="item">
-										<span class="arrow collapsed" data-toggle="collapse" data-target="#fruits" aria-expanded="false" role="button">
-											<i class="zmdi zmdi-minus"></i>
-											<i class="zmdi zmdi-plus"></i>
-										</span>
-										
-										<a class="category-title" href="product-grid-left-sidebar.php">Fruits</a>
-										<div class="sub-category collapse" id="fruits" aria-expanded="true" role="main">
-											<div class="item">
-												<a href="product-grid-left-sidebar.php">Orange</a>
-											</div>
-											<div class="item">
-												<a href="product-grid-left-sidebar.php">Apple</a>
-											</div>
-											<div class="item">
-												<a href="product-grid-left-sidebar.php">Banana</a>
-											</div>
-											<div class="item">
-												<a href="product-grid-left-sidebar.php">Strawberry</a>
-											</div>
+										<div class="item">
+											<a href="product-grid-left-sidebar.php">Apple</a>
 										</div>
-									</div>
-									
-									<div class="item">
-										<span class="arrow collapsed" data-toggle="collapse" data-target="#juices" aria-expanded="false" role="button">
-											<i class="zmdi zmdi-minus"></i>
-											<i class="zmdi zmdi-plus"></i>
-										</span>
-										
-										<a class="category-title" href="product-grid-left-sidebar.php">Juices</a>
-										<div class="sub-category collapse" id="juices" aria-expanded="true" role="main">
-											<div class="item">
-												<a href="product-grid-left-sidebar.php">Orange Juices</a>
-											</div>
-											<div class="item">
-												<a href="product-grid-left-sidebar.php">Tomato Juices</a>
-											</div>
-											
+										<div class="item">
+											<a href="product-grid-left-sidebar.php">Banana</a>
 										</div>
-									</div>
-									
-									
-								</div>
-							</div>
-							
-							
-							<!-- Block - Filter -->
-							<div class="block product-filter">
-								<h3 class="block-title">Catalog</h3>
-							
-								<div class="block-content">
-									<div class="filter-item">
-										<h3 class="filter-title">Categories</h3>
-										
-										<div class="filter-content">
-											<ul>
-												<li>
-													<label class="check">
-														<span class="custom-checkbox">
-															<input type="checkbox">
-															<span class="checkmark"></span>
-														</span>
-														<a>Tomato <span class="quantity">(20)</span></a>
-													</label>
-												</li>
-												<li>
-													<label class="check">
-														<span class="custom-checkbox">
-															<input type="checkbox">
-															<span class="checkmark"></span>
-														</span>
-														<a>Broccoli <span class="quantity">(14)</span></a>
-													</label>
-												</li>
-											</ul>
+										<div class="item">
+											<a href="product-grid-left-sidebar.php">Strawberry</a>
 										</div>
 									</div>
 								</div>
+								
+								<div class="item">
+									<span class="arrow collapsed" data-toggle="collapse" data-target="#juices" aria-expanded="false" role="button">
+										<i class="zmdi zmdi-minus"></i>
+										<i class="zmdi zmdi-plus"></i>
+									</span>
+									
+									<a class="category-title" href="product-grid-left-sidebar.php">Juices</a>
+									<div class="sub-category collapse" id="juices" aria-expanded="true" role="main">
+										<div class="item">
+											<a href="product-grid-left-sidebar.php">Orange Juices</a>
+										</div>
+										<div class="item">
+											<a href="product-grid-left-sidebar.php">Tomato Juices</a>
+										</div>
+										
+									</div>
+								</div>
+								
+								
 							</div>
-							
 						</div>
 						
-						<!-- Page Content -->
-						<div id="center-column" class="col-lg-9 col-md-9 col-sm-9 col-xs-12">
-							<div class="product-category-page">
-							<!--add Products -->
-							<form action="proses_add_produk.php" method="POST" name="form-input-data">
-								<div class="mb-3">
-							    <label for="exampleInputGambar" class="form-label">Gambar</label>
-							    <input type="file" value="upload gambar" class="form-control" required="" autocomplete="off">
-							  </div>
-							  <div class="mb-3">
-							    <label for="exampleInputNama" class="form-label">Nama Produk</label>
-							    <input type="text" name="nama_produk" id="name" class="form-control" required="" autocomplete="off">
-							  </div>
-							  <div class="mb-3">
-							    <label for="exampleInputKategori" class="form-label">Kategori</label>
-							    <select name="id_kategori"></select>
-							  </div>
-							  <div class="mb-3">
-							    <label for="exampleInputNama" class="form-label">Stok</label>
-							    <input type="number" name="stok" id="name" class="form-control" required="" autocomplete="off">
-							  </div>
-							  <div class="mb-3">
-							    <label for="exampleInputNama" class="form-label">Satuan</label>
-							    <input type="text" name="nama_produk" id="name" class="form-control" required="" autocomplete="off">
-							  </div>
-							  <div class="mb-3">
-							    <label for="exampleInputNama" class="form-label">Suplier</label>
-							    <select name="id_suplier"></select>
-							  </div>
-							  <div class="mb-3">
-							    <label for="exampleInputNama" class="form-label">Harga</label>
-							    <input type="number" name="harga_produk" id="name" class="form-control" required="" autocomplete="off">
-							  </div>
-					      </form>
-
-					      <div style="margin-top: 10px;">
-					      	<button type="submit"class="btn btn-primary">Submit</button>  
-					      </div>
-					      
+						
+						<!-- Block - Filter -->
+						<div class="block product-filter">
+							<h3 class="block-title">Catalog</h3>
+						
+							<div class="block-content">
+								<div class="filter-item">
+									<h3 class="filter-title">Categories</h3>
+									
+									<div class="filter-content">
+										<ul>
+											<li>
+												<label class="check">
+													<span class="custom-checkbox">
+														<input type="checkbox">
+														<span class="checkmark"></span>
+													</span>
+													<a>Tomato <span class="quantity">(20)</span></a>
+												</label>
+											</li>
+											<li>
+												<label class="check">
+													<span class="custom-checkbox">
+														<input type="checkbox">
+														<span class="checkmark"></span>
+													</span>
+													<a>Broccoli <span class="quantity">(14)</span></a>
+												</label>
+											</li>
+										</ul>
+									</div>
+								</div>
 							</div>
+						</div>
+						
+					</div>
+					
+					<!-- Page Content -->
+					<div id="center-column" class="col-lg-9 col-md-9 col-sm-9 col-xs-12">
+						<div class="product-category-page">
+						<!--add Products -->
+							<form action="proses_add_produk.php" method="post" enctype="multipart/form-data">								
+								<div class="mb-3">
+									<label for="exampleInputNama" class="form-label">Nama Produk</label>
+									<input type="text" name="nama_produk" id="name" class="form-control" required="" autocomplete="off">
+								</div>
+								<div>
+									<label for="exampleInputNama" class="form-label">Kategori</label>
+									<select class="form-control nice-select wide" name="id_kategori">
+									<option value="" disabled selected>
+									
+									</option>
+									<option value="">
+										<?php
+										include "../connection.php";
+										$query = mysqli_query($connection,"SELECT * FROM kategori");
+										while ($data = mysqli_fetch_array($query)) {
+											echo "<option value=$data[id_kategori]> $data[nama_kategori]</option>";
+										}
+										?>
+									</option>
+									</select>
+								</div>
+								<div class="mb-3">
+									<label for="exampleInputNama" class="form-label">Stok</label>
+									<input type="number" name="stok" id="name" class="form-control" required="" autocomplete="off">
+								</div>
+								<div class="mb-3">
+									<label for="exampleInputNama" class="form-label">Satuan</label>
+									<input type="text" name="satuan" id="name" class="form-control" required="" autocomplete="off">
+								</div>
+								<div class="mb-3">
+									<label for="exampleInputNama" class="form-label">Harga</label>
+									<input type="number" name="harga" id="name" class="form-control" required="" autocomplete="off">
+								</div>
+								<div class="mb-3">
+									<p>Gambar</p>
+									<input type="file" name="gambar" required="" />
+								</div>
+								<div style="margin-top: 10px;">
+									<button type="submit" name="submit" class="btn btn-primary">
+										Tambah
+									</button>
+								</div>
+							</form>										      
 						</div>
 					</div>
 				</div>
+			</div>
 		
 			
 			<!-- Footer -->

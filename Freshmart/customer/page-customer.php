@@ -129,35 +129,7 @@
 
 									<!-- Products Grid -->
 									
-									<?php 
-										if(isset($_GET['alert'])){
-											if($_GET['alert']=='gagal_ekstensi'){
-												?>
-												<div class="alert alert-warning alert-dismissible">
-													<button type="button" class="close" data-dismiss="alert" aria-hidden="true">×</button>
-													<h4><i class="icon fa fa-warning"></i> Peringatan !</h4>
-													Ekstensi Tidak Diperbolehkan
-												</div>								
-												<?php
-											}elseif($_GET['alert']=="gagal_ukuran"){
-												?>
-												<div class="alert alert-warning alert-dismissible">
-													<button type="button" class="close" data-dismiss="alert" aria-hidden="true">×</button>
-													<h4><i class="icon fa fa-check"></i> Peringatan !</h4>
-													Ukuran File terlalu Besar
-												</div> 								
-												<?php
-											}elseif($_GET['alert']=="berhasil"){
-												?>
-												<div class="alert alert-success alert-dismissible">
-													<button type="button" class="close" data-dismiss="alert" aria-hidden="true">×</button>
-													<h4><i class="icon fa fa-check"></i> Success</h4>
-													Berhasil Disimpan
-												</div> 								
-												<?php
-											}
-										}
-									?>
+									
 									<div class="tab-pane active" id="products-grid">
 										<a class='btn btn-primary' href='add_customer.php'>Add Custommer</a>
 										<?php   
@@ -179,7 +151,7 @@
 
 														<div class="product-image">
 															<a href="product-detail-left-sidebar.php">
-															<img src="images/" width='200' height='100'>
+															<img class="img-responsive" src="../img/customer/<?php echo $data['gambar'];?>" alt="Product Image" style="margin: auto;">
 															</a>
 														</div>
 														
@@ -201,7 +173,7 @@
 																<i class="fa fa-trash" aria-hidden="true"></i>
 															</a>
 															
-															<a class="quickview" href="edit_customer.php">
+															<a class="quickview" href="edit_customer.php?id_pelanggan=<?php echo $data["id_pelanggan"]; ?>">
 																<i class="fa fa-edit" aria-hidden="true"></i>
 															</a>
 														</div>

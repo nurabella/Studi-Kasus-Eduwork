@@ -214,36 +214,31 @@
 							
 						</div>
 						<?php
-					      include "../connection.php";
-					      $id_pelanggan= $_GET['id_pelanggan'];
+							include "../connection.php";
+							$id_pelanggan = $_GET['id_pelanggan'];
 
-					      $pelanggans = mysqli_query($connection, "SELECT * FROM pelanggan");
-
-					      foreach ($pelanggans as $pelanggan){
-					        $nama_pelanggan = $pelanggan['nama_pelanggan'];
-					        $jenis_kelamin =  $pelanggan['jenis_kelamin'];
-					        $telpon= $pelanggan['telpon'];
-					        $alamat = $pelanggan['alamat'];
-					       
-					        }
-					    ?>
+							$pelanggan = mysqli_query($connection,"SELECT * FROM pelanggan WHERE id_pelanggan='$id_pelanggan'");
+							while($data = mysqli_fetch_array($pelanggan)){
+								$nama_pelanggan = $data['nama_pelanggan'];
+								$jenis_kelamin = $data['jenis_kelamin'];
+								$telpon= $data['telpon'];
+								$alamat = $data['alamat'];
+								$gambar = $data['gambar'];
+							}
+						?>
 						
 						<!-- Page Content -->
 						<div id="center-column" class="col-lg-9 col-md-9 col-sm-9 col-xs-12">
 							<div class="product-category-page">
 							<!--add Products -->
-							<form action="proses_add_produk.php" method="POST" name="form-input-data">
-								<div class="mb-3">
-							    <label for="exampleInputGambar" class="form-label">Foto</label>
-							    <input type="file" value="upload gambar" class="form-control" required="" autocomplete="off" >
-							  </div>
+							<form action="proses_edit_customer.php?id_pelanggan=<?php echo $id_pelanggan; ?>" method="post" enctype="multipart/form-data">
 							  <div class="mb-3">
 							    <label for="exampleInputNama" class="form-label">Nama Custommer</label>
-							    <input type="text" name="nama_produk" id="name" class="form-control" required="" autocomplete="off"value="<?php echo $nama_pelanggan;?>">
+							    <input type="text" name="nama_pelanggan" class="form-control" required="" autocomplete="off" value="<?php echo $nama_pelanggan;?>">
 							  </div>
 							  <div class="mb-3">
 							    <label for="exampleInputNama" class="form-label">Telpon</label>
-							    <input type="number" name="nama_produk" id="name" class="form-control" required="" autocomplete="off"value="<?php echo $telpon;?>">
+							    <input type="text" name="telpon" class="form-control" required="" autocomplete="off"value="<?php echo $telpon;?>">
 							  </div>
 							  <div class="mb-3">
 							    <label for="exampleInputNama" class="form-label">Jenis Kelamin</label>
@@ -256,7 +251,7 @@
 			                      }
 			                
 			                      ?>
-			                      <label class="form-check-label"> Pria</label>
+			                      <label class="form-check-label">Laki-Laki</label>
 			                      </div>
 
 			                      <div class="form-check">
@@ -268,18 +263,25 @@
 			                      }
 			                
 			                      ?>
-			                      <label class="form-check-label">Wanita</label>
+			                      <label class="form-check-label">Perempuan</label>
 			                      </div>
 							  </div>
 							  <div class="mb-3">
 							    <label for="exampleInputNama" class="form-label">Alamat</label>
 							    <textarea class= "form-control" name="alamat" rows="5" required=""> <?php echo $alamat;?></textarea>
 							  </div>
+							  <div class="mb-3">
+									<p>Gambar</p>
+									<input type="file" name="gambar" required="" />
+							  </div>
+							  <div style="margin-top: 10px;">
+								<button type="submit" name="submit" class="btn btn-primary">
+									Tambah
+								</button>
+							 </div>
 				                	
 					      </form>
-					      <div style="margin-top: 10px;">
-					      	<button type="submit"class="btn btn-primary">Submit</button>  
-					      </div>
+					      
 					      
 							</div>
 						</div>
