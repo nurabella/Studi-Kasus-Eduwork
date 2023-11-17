@@ -219,7 +219,7 @@
 										<div class="product-item">
 											<div class="product-image">
 												<a href="product-detail-left-sidebar.php">
-													<img class="img-responsive" src="img/product/4.jpg" alt="Product Image">
+													<img class="img-responsive" src="img/product/<?php echo $data['gambar'];?>" alt="Product Image">
 												</a>
 											</div>
 											
@@ -231,12 +231,12 @@
 
 											<div class="product-title">
 												<a href="product-detail-left-sidebar.php">
-													<?php echo $data['stok']. $data['satuan'];?>
+												Stok : 	<?php echo $data['stok']. $data['satuan'];?>
 												</a>
 											</div>
 
 											<div class="product-price">
-												<span class="sale-price">Rp. <?php echo $data['harga'];?></span>
+												<span class="sale-price"><?php $angka = $data['harga']; echo "Rp. " . number_format($angka,0,',','.'); ?></span>
 											</div>
 											
 											<div class="product-buttons">
@@ -272,7 +272,7 @@
 										<div class="product-item">
 											<div class="product-image">
 												<a href="product-detail-left-sidebar.php">
-													<img class="img-responsive" src="img/product/4.jpg" alt="Product Image">
+												<img class="img-responsive" src="img/product/<?php echo $data['gambar'];?>" alt="Product Image">
 												</a>
 											</div>
 											
@@ -284,12 +284,12 @@
 
 											<div class="product-title">
 												<a href="product-detail-left-sidebar.php">
-													<?php echo $data['stok']. $data['satuan'];?>
+												Stok : 	<?php echo $data['stok']. $data['satuan'];?>
 												</a>
 											</div>
 
 											<div class="product-price">
-												<span class="sale-price">Rp. <?php echo $data['harga'];?></span>
+												<span class="sale-price"><?php $angka = $data['harga']; echo "Rp. " . number_format($angka,0,',','.'); ?></span>
 											</div>
 											
 											<div class="product-buttons">
@@ -325,7 +325,7 @@
 										<div class="product-item">
 											<div class="product-image">
 												<a href="product-detail-left-sidebar.php">
-													<img class="img-responsive" src="img/product/4.jpg" alt="Product Image">
+												<img class="img-responsive" src="img/product/<?php echo $data['gambar'];?>" alt="Product Image">
 												</a>
 											</div>
 											
@@ -337,12 +337,12 @@
 
 											<div class="product-title">
 												<a href="product-detail-left-sidebar.php">
-													<?php echo $data['stok']. $data['satuan'];?>
+												Stok : <?php echo $data['stok']. $data['satuan'];?>
 												</a>
 											</div>
 
 											<div class="product-price">
-												<span class="sale-price">Rp. <?php echo $data['harga'];?></span>
+												<span class="sale-price"><?php $angka = $data['harga']; echo "Rp. " . number_format($angka,0,',','.'); ?></span>
 											</div>
 											
 											<div class="product-buttons">
@@ -378,7 +378,7 @@
 										<div class="product-item">
 											<div class="product-image">
 												<a href="product-detail-left-sidebar.php">
-													<img class="img-responsive" src="img/product/4.jpg" alt="Product Image">
+												<img class="img-responsive" src="img/product/<?php echo $data['gambar'];?>" alt="Product Image">
 												</a>
 											</div>
 											
@@ -390,12 +390,12 @@
 
 											<div class="product-title">
 												<a href="product-detail-left-sidebar.php">
-													<?php echo $data['stok']. $data['satuan'];?>
+													Stok : <?php echo $data['stok']. $data['satuan'];?>
 												</a>
 											</div>
 
 											<div class="product-price">
-												<span class="sale-price">Rp. <?php echo $data['harga'];?></span>
+												<span class="sale-price"><?php $angka = $data['harga']; echo "Rp. " . number_format($angka,0,',','.'); ?></span>
 											</div>
 											
 											<div class="product-buttons">

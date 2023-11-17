@@ -44,11 +44,11 @@
 				<div id="main-menu">
 					<ul class="menu">
 						<li class="dropdown">
-							<a href="home.php" title="Homepage">Home</a>
+							<a href="../home.php" title="Homepage">Home</a>
 						</li>
 						
 						<li class="dropdown">
-							<a href="product.php" title="Product">Product</a>
+							<a href="../produk/product.php" title="Product">Product</a>
 							<div class="dropdown-menu">
 								<ul>
 									<li class="has-image">
@@ -73,11 +73,11 @@
 							<a href="../customer/page-customer.php">Customer</a>
 						</li>
 						<li>
-							<a href="page-about-us.php">About Us</a>
+							<a href="../page-about-us.php">About Us</a>
 						</li>
 						
 						<li>
-							<a href="page-contact.php">Contact</a>
+							<a href="../page-contact.php">Contact</a>
 						</li>
 					</ul>
 				</div>
@@ -218,40 +218,42 @@
 						<div id="center-column" class="col-lg-9 col-md-9 col-sm-9 col-xs-12">
 							<div class="">
 							<!--add Products -->
-							<form action="proses_add_customer.php" method="POST" enctype="multipart/form-data"  name="form-input-data">
-							<div class="mb-3">
-							    <label for="exampleInputGambar" class="form-label">Foto</label>
-							    <input type="file" name="foto" id="foto" accept=".jpg, .jpeg, .png"  required="" autocomplete="off">
-							  </div>
+						<form action="proses_add_customer.php" method="post" enctype="multipart/form-data"> 
 							  <div class="mb-3">
 							    <label for="exampleInputNama" class="form-label">Nama Custommer</label>
-							    <input type="text" name="nama_produk" id="name" class="form-control" required="" autocomplete="off">
+							    <input type="text" name="nama_pelanggan" id="name" class="form-control" required="" autocomplete="off">
 							  </div>
 							  <div class="mb-3">
 							    <label for="exampleInputNama" class="form-label">Telpon</label>
-							    <input type="number" name="nama_produk" id="name" class="form-control" required="" autocomplete="off">
+							    <input type="number" name="telpon" id="name" class="form-control" required="" autocomplete="off">
 							  </div>
 							  <div class="mb-3">
 							    <label for="exampleInputNama" class="form-label">Jenis Kelamin</label>
 							    <div class="form-check">
-			                      <input class="form-check-input" type="radio" name="sex"  value="Laki-laki" checked="" >
+			                      <input class="form-check-input" type="radio" name="jenis_kelamin"  value="pria" checked="" >
 			                      <label class="form-check-label"> Laki-laki</label>
 			                      </div>
 
 			                      <div class="form-check">
-			                      <input class="form-check-input" type="radio" name="sex"  value="Laki-laki" >
+			                      <input class="form-check-input" type="radio" name="jenis_kelamin"  value="wanita" >
 			                      <label class="form-check-label"> Perempuan</label>
 			                    </div>
 							  </div>
 							  <div class="mb-3">
 							    <label for="exampleInputNama" class="form-label">Alamat</label>
-							    <textarea class= "form-control" name="alamat" required="" autocomplete="off" ></textarea>
+							    <textarea class="form-control" name="alamat" required="" autocomplete="off" ></textarea>
 							  </div>
-				                	
+							  <div class="mb-3">
+							  <label for="exampleInputNama" class="form-label">Gambar</label>
+									<input type="file" name="gambar" required="" />
+							  </div>
+							  <div style="margin-top: 10px;">
+								<button type="submit" name="submit" class="btn btn-primary">
+									Tambah
+								</button>
+							  </div>	
 					      </form>
-					      <div style="margin-top: 10px;">
-					      	<button type="submit"class="btn btn-primary">Submit</button>  
-					      </div>
+					      
 					      
 							</div>
 						</div>

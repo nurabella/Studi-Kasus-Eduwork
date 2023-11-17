@@ -240,7 +240,7 @@
 									<?php   
 										include "../connection.php";
 										$query = mysqli_query($connection, "SELECT * FROM produk INNER JOIN kategori ON produk.id_kategori = kategori.id_kategori");
-									?>
+									?> 
 									<div class="tab-pane active" id="products-grid">
 										<a class='btn btn-primary' href='add_produk.php'>Add Produk</a>
 										<div class="products-block">
@@ -252,7 +252,7 @@
 													<div class="product-item">
 														<div class="product-image">
 															<a href="product-detail-left-sidebar.php">
-																<img class="img-responsive" src="../img/product/4.jpg" alt="Product Image">
+																<img class="img-responsive" src="../img/product/<?php echo $data['gambar']; ?>" alt="Product Image">
 															</a>
 														</div>
 														
@@ -264,12 +264,12 @@
 
 														<div class="product-title">
 															<a href="product-detail-left-sidebar.php">
-																<?php echo $data['stok']. $data['satuan'];?>
+															Stok : <?php echo $data['stok']. $data['satuan'];?>
 															</a>
 														</div>
 
 														<div class="product-price">
-															<span class="sale-price">Rp. <?php echo $data['harga'];?></span>
+														<?php $angka = $data['harga']; echo "Rp. " . number_format($angka,0,',','.'); ?>
 														</div>
 														
 														<div class="product-buttons">
@@ -277,7 +277,7 @@
 																<i class="fa fa-trash" aria-hidden="true"></i>
 															</a>
 															
-															<a class="quickview" href="edit_produk.php">
+															<a class="quickview" href="edit_produk.php?id_produk=<?php echo $data["id_produk"]; ?>">
 																<i class="fa fa-edit" aria-hidden="true"></i>
 															</a>
 														</div>
